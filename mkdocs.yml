@@ -1,0 +1,18 @@
+site_name: 'quiche'
+site_description: "Cloudflare's implementation of QUIC and HTTP/3 in Rust"
+
+plugins:
+  - techdocs-core
+  - mermaid2
+
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Overview: overview.md
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
